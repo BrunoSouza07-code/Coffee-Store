@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Luckiest+Guy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f0ea;
+    color: #111110;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+}
+header{
+    background-image: url(/img/chat3.png);/*para colocar uma imagem atras do texto*/
+    background-size: 100%;/*a imagem ocupa 100% de forma horizontal*/
+    background-position: center;/*deixar a imagem centralizada*/
+    color: #f4f0ea; /*cores do texto*/
+    padding: 10rem;
+    text-align: left;/*direcionamento do texto, nesse caso para a esquerda*/
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+h1 span{
+    display: block;/*quebra de texto, no html foi colocado span para identificar onde o texto deve ser quebrado*/
+}
+.introduction{/*quando se tem .*** significa que uma div foi criada e vc só quer modificar ela*/
+    color: #f4f0ea;
+    font-size: 20px;/*usado para aumentar o tamanho das letras*/
+}
+.introduction span{
+    display: block;
+}
+main{
+    background-color: #8B5E3C;
+    color: #f4f0ea;
+    padding: 1rem;
+}
+main span{
+    display: block;
+}
+
+.texto-imagem{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.texto-imagem img{ /*para você conseguir criar a imagem primeiro, você dee colocar antes do seu texto, lá no html*/
+    float: right;
+    margin-top: -50px;
+    margin-right: 100px;
+    margin-bottom: 5px;
+    width: 16rem;
+    border-radius: 10px;
+    
+}
+.text{
+    text-align: start;
+    margin-top: 7rem;
+}
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.catalogo a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.5rem;
+    
+}
+.cards{
+    background: rgb(97, 76, 51);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    padding: 1rem;
+    text-align: center;
+    width: 250px;
+}
+.cards img{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.subscription {
+    background: linear-gradient(135deg, #6D4C3D, #A67B5B);
+    padding: 6rem 2rem;     /* mais espaço interno */
+    margin: 4rem 0;         /* separa do que está acima e abaixo */
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.subscription .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    opacity: 0.9;
+}
+
+.plans {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 300px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan.featured {
+    border: 3px solid #ffeb99;
+    transform: scale(1.08);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #ffeb99;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.plan h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.plan-price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+}
+
+.plan ul {
+    text-align: left;
+    margin: 2rem 0;
+    list-style: none;
+}
+
+.plan ul li {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.plan ul li::before {
+    content: "✓";
+    color: #ffeb99;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.btn-plan {
+    background: white;
+    color: #6D4C3D;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn-plan:hover {
+    background: #ffeb99;
+}
+.feedback{
+    align-items: flex-start;
+    padding:2rem;
+    margin-right: 2rem;
+    
+}
+fieldset{
+    background-color: transparent;
+    border: 2px solid #A67B5B;
+    border-radius: 10px;
+
+}
+footer{/*rodapé é o footer, onde coloca direitos autorais, contatos entre outros*/
+    background-color: #4B3621;
+    color: #f4f0ea;
+    text-align: center;
+}
+input[type="text"], input[type="email"]{ /*deve ser utilizada muito para modificar em grandes proporções, como aqui tinha dois lugares para preencher e as config iam ser as mesmas*/
+    width: 100%;
+    padding: 0.6rem;
+    border: #111110;
+    border-radius: 10px;
+    cursor: text;
+    outline: #111110;
+}
+textarea{/*espaço reservado para modificação de comentários*/
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 10px;
+    cursor: text;
+}
+#cart-panel {
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    width: 260px;
+    background: #4B3621;
+    color: #f4f0ea;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+
+#cart-panel h3 {
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 0.8rem;
+}
+
+#cart-items li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 0.3rem;
+}
+
+#cart-total {
+    font-weight: bold;
+    margin: 0.8rem 0;
+    text-align: center;
+}
+
+#clear-cart {
+    width: 100%;
+    padding: 0.5rem;
+    background: #ffeb99;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* BOTÃO FIXO DO CARRINHO */
+#cart-toggle {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    background: #ffeb99;
+    color: #333;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* PAINEL LATERAL */
+#cart-panel {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 320px;
+    height: 100%;
+    background: #4B3621;
+    color: #f4f0ea;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.4);
+    transition: right 0.4s ease;
+    z-index: 1200;
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-panel.open {
+    right: 0;
+}
+
+/* HEADER */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+#cart-close {
+    background: none;
+    border: none;
+    color: #f4f0ea;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* LISTA */
+#cart-items {
+    list-style: none;
+    padding: 1rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+#cart-items li {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding-bottom: 0.4rem;
+}
+
+/* FOOTER */
+.cart-footer {
+    padding: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+#cart-total {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+#clear-cart {
+    width: 100%;
+    padding: 0.6rem;
+    background: #ffeb99;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#checkout-btn {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 0.6rem;
+    background: #ffeb99;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#checkout-btn:hover {
+    background: #f5dc7a;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-item button {
+    background: none;
+    border: none;
+    color: #ffeb99;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    color: #f5dc7a;
+}

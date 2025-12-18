@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>B.S Coffee</title>
+</head>
+
+<body>
+    <header>
+        <H1>B.S Coffee <span>A experiência que vale a pena!</span></H1>
+        <!--usa span sempre que desejr quebrar um texto, mas deve adicionar no css ,***span{}-->
+        <div class="introduction">
+            <p>Aqui você encontrar um café para cada experiência, <span>deixe-nos fazer parte da sua história.
+                    <span>Confira nossos produtos e novidades logo abaixo.</span></p>
+        </div>
+    </header>
+    <!-- BOTÃO DO CARRINHO -->
+    <button id="cart-toggle">🛒 Carrinho</button>
+
+    <!-- CARRINHO LATERAL -->
+    <aside id="cart-panel">
+        <header class="cart-header">
+            <h3>Seu Carrinho</h3>
+            <button id="cart-close">✕</button>
+        </header>
+
+        <ul id="cart-items"></ul>
+
+        <div class="cart-footer">
+            <p id="cart-total">Total: R$ 0,00</p>
+            <button id="checkout-btn">Finalizar compra</button>
+            <button id="clear-cart">Limpar carrinho</button>
+        </div>
+    </aside>
+
+
+    <main>
+        <section><!--Deve-se abrir um main e section, para ter uma forma mais organizada de mexer no site-->
+            <div class="texto-imagem">
+                <h2>Sobre Nós</h2>
+                <figure>
+                    <img src="/img/gemini.png" "/img/classico.png" "/img/unnamed.png" "/img/gourmet.png" "/img/especial.png"
+                        alt="Café Gourmet"><!--para colocar uma imagem atrás/frente do texto, a imagem deve estar antes, como nesse caso, veio antes do parágrafo-->
+                </figure>
+                <p>Somos apaixonados por café. <span>Desde o cultivo dos grão, até o cafezinho pronto.</span>
+                    <span>Apreciamos cada momento e <span>sabemos que todos os momentos com café tem uma boa
+                            história.</span>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="text">
+                <h2>Nossos Produtos</h2>
+            </div>
+            <div class="catalogo">
+                <div class="cards">
+                    <figure>
+                        <img src="/img/classico.png" alt="copo de café">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Café clássico Premium</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/classico.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/unnamed.png" alt="café gourmet">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Café Orfeu</p>
+                        <p>R$ 29,90</p>
+                    </figcaption>
+                    <a href="/img/unnamed.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/gourmet.png" alt="café gourmet">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Café Gourmet</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/gourmet.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/especial.png" alt="especial caramelizado">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Café Especial Caramelo</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/especial.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/blend.png" alt="café blend">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Café Blend</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/blend.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/Combo cookie.png" alt="cookie">
+                    </figure>
+                    <figcaption>
+                        <p>Combo Clássico Premium + Cookie</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/Combo cookie.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/combo bolo.png" alt="bolo">
+                    </figure>
+                    <figcaption>
+                        <p>Combo Clássico Premium + 1 fatia de bolo</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/combo bolo.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/combo croassain.png" alt="croassain">
+                    </figure>
+                    <figcaption>
+                        <p>Combo Clássico Premium + Croassain</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/combo croassain.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/garrafa termica.png" alt="garrafa">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Garrafa térmica para café</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/garrafa termica.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/garrafa terminca 2.png" alt="garrafa">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Garrafa para água</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/garrafa terminca 2.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/chaveiro1.png" alt="chaveiro">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Chaveiro "I Love Coffee"</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/chaveiro1.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="cards">
+                    <figure>
+                        <img src="/img/chaveiro2.png" alt="chaveiro">
+                        <p>BS COFFEE</p>
+                    </figure>
+                    <figcaption>
+                        <p>Chaveiro "I Love Coffee 2"</p>
+                        <p>R$ 31,90</p>
+                    </figcaption>
+                    <a href="/img/chaveiro2.png" target="_blank">Ver Foto</a>
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <section class="subscription">
+                <div class="container">
+                    <h2>Clube de Assinatura B.S Coffee</h2>
+                    <p class="subtitle">Todo mês um café especial surpresa na sua casa</p>
+                    <div class="plans">
+                        <div class="plan">
+                            <h3>Básico</h3>
+                            <p class="plan-price">R$ 69,90/mês</p>
+                            <ul>
+                                <li>1 pacote 250g</li>
+                                <li>Frete grátis</li>
+                                <li>Brinde no 3º mês</li>
+                            </ul>
+                            <a href="#" class="btn-plan">Assinar</a>
+                        </div>
+                        <div class="plan featured">
+                            <span class="badge">Mais Popular</span>
+                            <h3>Explorador</h3>
+                            <p class="plan-price">R$ 109,90/mês</p>
+                            <ul>
+                                <li>2 pacotes 250g</li>
+                                <li>Frete grátis</li>
+                                <li>Acompanhamento + brinde todo mês</li>
+                            </ul>
+                            <a href="#" class="btn-plan">Assinar</a>
+                        </div>
+                        <div class="plan">
+                            <h3>Barista</h3>
+                            <p class="plan-price">R$ 179,90/mês</p>
+                            <ul>
+                                <li>4 pacotes (escolha ou surpresa)</li>
+                                <li>Frete grátis + acesso antecipado</li>
+                                <li>Caneca exclusiva no 1º mês</li>
+                            </ul>
+                            <a href="#" class="btn-plan">Assinar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <div class="feedback">
+                <h2>FEEDBACK</h2>
+                <form><!--feedback, comentários, devem abrir um forms-->
+                    <fieldset>
+                        <legend>Deixe uma sugestão</legend>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu Nome"><br>
+                        <label for="e-mail">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email"><br>
+                        <label for="comments">Comentário:</label><br>
+                        <textarea name="comments" id="comments" rows="5" cols="50"
+                            placeholder="Digite seu comentário aqui"></textarea>
+                    </fieldset>
+            </div>
+            </form>
+        </section>
+    </main>
+    <footer><!--footer é o rodapé da página e é onde deixa os direitos autorais e contatos-->
+        <p class="paragrafo-footer">&copy; B.S COFFEE. Todos os direitos reservados</p>
+        <p>
+        <p>Para conhecer mais,<a href="https://github.com/brunosouza07-code" target="_blank"> clique aqui!</a></p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
